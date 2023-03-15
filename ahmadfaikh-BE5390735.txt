@@ -1,0 +1,32 @@
+Sistem kasir (memasukan item dan auto calculate total harga).
+
+array "barang" = ['1'=>['nama'=>'buku', 'harga'=>2000],'2'=>['nama'=>'pensil', 'harga'=>'3000']]
+array "chart" = []
+
+
+while loops :
+	var total_harga = 0
+	var id = input id barang
+	var jumlah = input jumlah barang
+	IF id ada dalam array barang THEN
+		var nama_barang = barang[id]['nama']
+		var harga_barang = barang[id]['harga']
+		tambah [id,nama_barang, jumlah*harga_barang] ke dalam chart
+		var i = 0
+		while loops i < panjang array barang:
+			total_harga = total_harga+chart[i][2]
+			i = i+1
+	ELSE THEN 
+		print out "barang tidak terdaftar"
+
+	print out chart
+	print out total_harga
+	var checkout = input "apakah ingin menyelesaikan transaksi ?y/n"
+	IF checkout == 'y' THEN
+		break
+
+print out chart
+print out total_harga
+	
+
+		
